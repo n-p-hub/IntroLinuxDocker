@@ -1,0 +1,26 @@
+version: '3'
+services:
+    mysql-development:
+      image: mysql
+      container_name: un-mysql
+      command: --default-authentication-plugin=mysql_native_password
+      environment:
+        MYSQL_ROOT_PASSWORD: test1234
+        MYSQL_DATABASE: ejemplo
+        MYSQL_USER: ejemplo
+        MYSQL_PASSWORD: test1234
+      ports:
+        - "3306:3306"
+      working_dir: /var/lib/mysql
+      volumes:
+        - "../mysql-volume:/var/lib/mysql"
+    ejemplomysql:
+      image: ejemplomysql
+      container_name: un-ejemplomysql
+      environment:
+        DBNAME: ejemplo
+        DBUSER: ejemplo
+        DBPASS: test1234
+        DBHOST: un-mysql
+      ports:
+        - "3000:3000"
