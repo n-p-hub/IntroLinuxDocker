@@ -25,7 +25,7 @@ docker ps  #listado de contenedores en ejecución
 docker ps -a #listado de contenedores en ejecución y detenidos
 ```
 
-#### Nginx
+### Nginx
 ```
 docker run --name minginx -p 80:80 -d nginx 
 
