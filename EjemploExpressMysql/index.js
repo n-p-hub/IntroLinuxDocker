@@ -8,18 +8,19 @@ const connection = mysql.createConnection({
   database: process.env.DBNAME
 })
 
+connection.connect()
+
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  connection.connect()
+  
 
   connection.query('SELECT 1 + 1 AS solucion', (err, rows, fields) => {
     if (err) throw err
     res.send('1 + 1 = ' + rows[0].solucion)
   })
   
-  connection.end()  
 })
 
 app.listen(port, () => {
