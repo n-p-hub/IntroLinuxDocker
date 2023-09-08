@@ -1,5 +1,6 @@
 ## Intro a Docker
 
+sudo usermod -aG docker $USER (Agregar a usaurio a grupo Docker)
 ### Material de Referencia:
 https://docs.docker.com/get-started/
 
