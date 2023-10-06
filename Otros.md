@@ -12,9 +12,14 @@ https://fabianlee.org/2022/11/19/github-automated-github-release-for-spring-boot
 
 Dokku + Docker Images:
 https://dokku.com/docs/deployment/methods/git/#initializing-an-app-repository-from-a-docker-image
+https://dokku.com/docs/advanced-usage/docker-options/
 
 Dokku + Login Regsitry:
 https://dokku.com/docs/advanced-usage/registry-management/
 
 Dokku + Github Actions:
 https://github.com/marketplace/actions/dokku
+https://github.com/dokku/github-action
+
+
+
